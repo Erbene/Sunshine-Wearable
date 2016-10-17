@@ -50,8 +50,9 @@ public class WeatherContract {
         // normalize the start date to the beginning of the (UTC) day
         Time time = new Time();
         time.set(startDate);
-        int julianDay = Time.getJulianDay(startDate, time.gmtoff);
-        return time.setJulianDay(julianDay);
+//        int julianDay = Time.getJulianDay(startDate, time.gmtoff);
+
+        return startDate/1000;
     }
 
     /* Inner class that defines the table contents of the location table */
